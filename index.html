@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern responsive landing page template built with Tailwind CSS. Easy to customize and SEO-friendly."
+    />
+    <title>Modern Landing Page</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow fixed w-full z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16"
+      >
+        <a href="#" class="text-xl font-bold text-indigo-600">YourLogo</a>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#features" class="hover:text-indigo-600">Features</a>
+          <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+          <a href="#testimonials" class="hover:text-indigo-600">Testimonials</a>
+          <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-2xl">&#9776;</button>
+      </div>
+      <div id="mobile-menu" class="hidden bg-white shadow-md md:hidden">
+        <nav class="flex flex-col p-4 space-y-3">
+          <a href="#features" class="hover:text-indigo-600">Features</a>
+          <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+          <a href="#testimonials" class="hover:text-indigo-600">Testimonials</a>
+          <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50 pt-24 pb-16">
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 space-y-6">
+          <h1 class="text-4xl md:text-5xl font-bold">
+            Grow Your Business with a Modern Landing Page
+          </h1>
+          <p class="text-gray-600 text-lg pb-4">
+            A clean and responsive design that is easy to customize and ready to
+            launch.
+          </p>
+          <a
+            href="#contact"
+            class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+            >Get Started</a
+          >
+        </div>
+        <div class="md:w-1/2 mt-10 md:mt-0">
+          <img
+            src="images/hero.jpg"
+            alt="Hero Image"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-10">Features</h2>
+        <div class="grid gap-10 md:grid-cols-3">
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="font-semibold text-xl mb-2">Responsive</h3>
+            <p class="text-gray-600">
+              Works seamlessly on desktop, tablet, and mobile devices.
+            </p>
+          </div>
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="font-semibold text-xl mb-2">SEO Friendly</h3>
+            <p class="text-gray-600">
+              Optimized structure with meta tags and clean code.
+            </p>
+          </div>
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="font-semibold text-xl mb-2">Easy Customization</h3>
+            <p class="text-gray-600">
+              Change text, images, and colors quickly with Tailwind classes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-10">Pricing Plans</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Free</h3>
+            <p class="text-gray-600 mb-4">$0 / month</p>
+            <ul class="text-gray-600 mb-4 space-y-2">
+              <li>Basic Features</li>
+              <li>Email Support</li>
+            </ul>
+            <button
+              class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+            >
+              Get Started
+            </button>
+          </div>
+          <div
+            class="p-6 bg-white shadow rounded-lg border-2 border-indigo-600"
+          >
+            <h3 class="text-xl font-semibold mb-2">Pro</h3>
+            <p class="text-gray-600 mb-4">$19 / month</p>
+            <ul class="text-gray-600 mb-4 space-y-2">
+              <li>All Free Features</li>
+              <li>Advanced Analytics</li>
+              <li>Priority Support</li>
+            </ul>
+            <button
+              class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Business</h3>
+            <p class="text-gray-600 mb-4">$49 / month</p>
+            <ul class="text-gray-600 mb-4 space-y-2">
+              <li>All Pro Features</li>
+              <li>Custom Branding</li>
+              <li>Dedicated Support</li>
+            </ul>
+            <button
+              class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-10">What Our Customers Say</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="p-6 bg-white shadow rounded-lg">
+            <img
+              src="images/user1.jpg"
+              alt="User 1"
+              class="w-16 h-16 mx-auto rounded-full mb-4"
+            />
+            <p class="text-gray-600 mb-2">
+              "This landing page helped us increase conversions by 50%!"
+            </p>
+            <h4 class="font-semibold">Jane Doe</h4>
+          </div>
+          <div class="p-6 bg-white shadow rounded-lg">
+            <img
+              src="images/user2.jpg"
+              alt="User 2"
+              class="w-16 h-16 mx-auto rounded-full mb-4"
+            />
+            <p class="text-gray-600 mb-2">
+              "Easy to edit and looks very professional."
+            </p>
+            <h4 class="font-semibold">John Smith</h4>
+          </div>
+          <div class="p-6 bg-white shadow rounded-lg">
+            <img
+              src="images/user3.jpg"
+              alt="User 3"
+              class="w-16 h-16 mx-auto rounded-full mb-4"
+            />
+            <p class="text-gray-600 mb-2">
+              "Our startup launch went smoothly thanks to this template."
+            </p>
+            <h4 class="font-semibold">Alice Lee</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-100">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <button class="w-full text-left faq-question font-semibold">
+              How can I edit the text?
+            </button>
+            <div class="faq-answer mt-2 hidden text-gray-600">
+              Open index.html in any code editor and change the text content
+              directly.
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <button class="w-full text-left faq-question font-semibold">
+              Can I use my own images?
+            </button>
+            <div class="faq-answer mt-2 hidden text-gray-600">
+              Yes, replace the images inside the /images folder and update the
+              src path in index.html.
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <button class="w-full text-left faq-question font-semibold">
+              How do I make the contact form work?
+            </button>
+            <div class="faq-answer mt-2 hidden text-gray-600">
+              Connect it to Formspree or your own backend as explained in
+              README.md.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+        <form
+          action="#"
+          method="POST"
+          class="space-y-4 bg-white p-6 rounded-lg shadow"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full border p-3 rounded-lg"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            class="w-full border p-3 rounded-lg"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition w-full"
+          >
+            Send Message
+          </button>
+        </form>
+        <p class="text-sm text-gray-500 mt-3 text-center">
+          * Connect this form with Formspree or your backend.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-6 text-center"></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
